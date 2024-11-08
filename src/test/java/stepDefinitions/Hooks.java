@@ -13,7 +13,7 @@ import factory.BaseClass;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Scenario;
 
-public class Hooks {
+public class Hooks{
 
 	WebDriver driver;
 	Properties p;

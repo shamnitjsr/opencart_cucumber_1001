@@ -18,7 +18,6 @@ import utilities.DataReader;
 
 public class LoginSteps {
 
-	WebDriver driver;
 	HomePage hp;
 	LoginPage lp;
 	MyAccountPage macc;
@@ -35,7 +34,7 @@ public class LoginSteps {
 		hp.clickLogin();
 	}
 
-	@When("user enters email as {string} and password as {String}")
+	@When("user enters email as {string} and password as {string}")
 	public void user_enters_email_as_and_password_as(String email, String pwd) {
 
 		BaseClass.getLogger().info("Entering email and password..");

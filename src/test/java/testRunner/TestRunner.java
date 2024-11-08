@@ -8,14 +8,14 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		//features= {".//Features/"},
-		//features= {".//Features/Login.feature"},
+		features= {".//Features/Login.feature"},
 		//features= {".//Features/LoginDDTExcel.feature"},
-		features= {".//Features/Login.feature",".//Features/Registration.feature"},
+		//features= {".//Features/Login.feature",".//Features/Registration.feature"},
 		//features= {"@target/rerun.txt"},
 		glue={"stepDefinitions","hooks"},
 		plugin= {"pretty", "html:reports/myreport.html",
-				//"rerun:target/rerun.txt",
-				"com.aventstack.extentreports.cucumber.adpter.ExtentCucumberAdapter:"
+				"rerun:target/rerun.txt"
+				//"com.aventstack.extentreports.cucumber.adpter.ExtentCucumberAdapter:"
 				},
 		dryRun=false,	//checks mapping between scenario steps and step definition methods
 		monochrome=true,	//to avoid junk characters in output
